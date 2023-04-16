@@ -1,0 +1,33 @@
+@import "../../../styles.scss";
+
+.single-text{
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+  &:hover{
+    box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.5);
+    background-color: whitesmoke;
+  }
+}
+
+.text-body p{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-footer{
+  background-color: rgb(235, 235, 235);
+}
+
+.text-image{
+  object-fit: cover;
+  height: 100%;
+  max-width: 100%;
+}
+
+.bi-arrow-right{
+  -webkit-text-stroke: 2px;
+}

@@ -1,0 +1,55 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-4">
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></span>
+        <input type="text" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="row">
+        <div class="col-6">
+          <button class="btn btn-outline-dark w-100 ">Sort by name</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-outline-dark w-100">Sort by date</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--add select with languages (polish, english, russian for now) then an arrow and another select with same languages-->
+  <div class="row">
+    <div class="col-5">
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Polish</option>
+        <option value="1">English</option>
+        <option value="2">Russian</option>
+      </select>
+    </div>
+    <div class="col-2 fs-4 text-center">
+      <i class="bi bi-arrow-right"></i>
+    </div>
+    <div class="col-5">
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Polish</option>
+        <option value="1">English</option>
+        <option value="2">Russian</option>
+      </select>
+    </div>
+  </div>
+  <div class="single-text container-fluid my-5" *ngFor="let text of texts" [routerLink]="['/single-text', text.id]">
+    <div class="row text-body bg-white">
+      <div class="ps-0 col-4">
+        <img class="text-image" src={{text.image}}>
+      </div>
+      <div class="col-8 d-flex flex-column">
+        <h2 class="text-center mt-4 mb-0">{{text.title}}</h2>
+        <p class="my-auto">{{text.text}}</p>
+      </div>
+    </div>
+    <div class="row text-center text-footer py-1">
+      <div>Created by</div>
+      <div>{{text.author}}</div>
+    </div>
+  </div>
+</div>

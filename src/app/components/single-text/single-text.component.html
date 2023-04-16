@@ -1,0 +1,26 @@
+<div class="container mt-3">
+  <img [src]="data['image']" class="text-image" alt="Responsive image" />
+  <div class="mx-4 mb-5">
+    <h1 class="text-center my-4">{{ data['base-title'] }}</h1>
+    <div
+      placement="bottom"
+      [ngbTooltip]="tooltipText"
+      positionTarget="{{tooltipTarget}}"
+      #t1="ngbTooltip"
+      triggers="manual"
+      class="text-center"
+    >
+      <span *ngFor="let sentence of baseSentences; let i = index" id="sentence-{{i}}">
+        <span
+          *ngFor="let word of sentence.split(' '); let j = index"
+          (mouseenter)="showTranslation(t1,i, j)"
+          (mousedown)="showTranslatedSentence(t1,i)"
+          id="word-{{ i }}-{{ j }}"
+        >
+          {{ word }}
+        </span>
+      </span>
+    </div>
+  </div>
+
+
