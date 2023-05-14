@@ -32,5 +32,89 @@
       "created_at": "2013-01-01 00:00:00",
       "image": "https://res.cloudinary.com/demo/image/upload/v1312461204/sample.jpg"
     }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "john_doe",
+      "email": "john.doe@example.com",
+      "password": "password123"
+    },
+    {
+      "id": 2,
+      "username": "jane_doe",
+      "email": "jane.doe@example.com",
+      "password": "secret"
+    },
+    {
+      "username": "admin",
+      "email": "maciej636107@gmail.com",
+      "password": "admin",
+      "id": 3
+    },
+    {
+      "username": "qwe",
+      "email": "qwe@gqwe.com",
+      "password": "qwe",
+      "id": 4
+    }
+  ],
+  "word_lists": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "name": "My First List",
+      "words": [
+        {
+          "id": 1,
+          "original_word": "hello",
+          "translated_word": "hola"
+        },
+        {
+          "id": 2,
+          "original_word": "goodbye",
+          "translated_word": "adios"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "user_id": 1,
+      "name": "My Second List",
+      "words": [
+        {
+          "id": 3,
+          "original_word": "cat",
+          "translated_word": "gato"
+        },
+        {
+          "id": 4,
+          "original_word": "dog",
+          "translated_word": "perro"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "user_id": 2,
+      "name": "My Favorite Words",
+      "words": [
+        {
+          "id": 5,
+          "original_word": "sun",
+          "translated_word": "sol"
+        },
+        {
+          "id": 6,
+          "original_word": "moon",
+          "translated_word": "luna"
+        },
+        {
+          "id": 7,
+          "original_word": "stars",
+          "translated_word": "estrellas"
+        }
+      ]
+    }
   ]
 }

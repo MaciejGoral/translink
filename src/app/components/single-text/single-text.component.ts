@@ -41,6 +41,8 @@ export class SingleTextComponent {
         {"base": "asked", "translation": "spytał", "sentence-index": 1, "id":2}
     ]
 }
+selectedWords: {base: string, translation: string}[] = [];
+wordListName: string = '';
 
   constructor(private textsService: TextsService, private route: ActivatedRoute ) { }
 
@@ -87,5 +89,21 @@ export class SingleTextComponent {
       window.addEventListener('mouseup', onMouseUp);
     }
   }
+  onWordDoubleClick(sentenceIndex: number, wordIndex: number) {
+    const word = this.baseSentences[sentenceIndex].split(' ')[wordIndex].replace(/[^\w\s]/gi, '').toLowerCase();
+    const translation = this.data['words-translation'].find((wt: any) => wt.base.toLowerCase() === word)?.translation;
+    if (translation) {
+      const selectedWord = {base: word, translation: translation};
+      this.selectedWords.push(selectedWord);
+    }
+  }
+  removeWord(index: number) {
+    this.selectedWords.splice(index, 1);
+  }
+  saveWords(){
+    console.log(this.selectedWords);
+    //console log user from local storage
+    console.log(JSON.parse(localStorage.getItem('user')));
 
+  }
 }

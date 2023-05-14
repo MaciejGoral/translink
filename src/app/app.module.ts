@@ -13,6 +13,9 @@ import { SingleTextComponent } from './components/single-text/single-text.compon
 import { HeaderComponent } from './components/header/header.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,8 @@ import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
     AddBaseTextComponent,
     SingleTextComponent,
     HeaderComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,6 +36,7 @@ import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
     NgbModule,
     HttpClientModule,
     NgbTooltipModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

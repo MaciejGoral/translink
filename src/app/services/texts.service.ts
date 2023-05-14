@@ -28,4 +28,12 @@ export class TextsService {
   deleteText(id: string): Observable<any> {
     return this.http.delete(`http://localhost:3000/texts/${id}`);
   }
+
+  registerUser(user) {
+    return this.http.post('http://localhost:3000/users/', user);
+  }
+
+  loginUser(username, password) {
+    return this.http.get(`http://localhost:3000/users/?username=${username}&password=${password}`);
+  }
 }
