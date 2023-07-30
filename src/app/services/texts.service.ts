@@ -29,16 +29,13 @@ export class TextsService {
   }
 
   registerUser(user) {
-    return this.http.post('http://localhost:3000/v1/users', { user });
+    return this.http.post('http://localhost:3000/users/', user);
   }
 
-  loginUser(email: string, password: string) {
-    const user = {
-      email: email,
-      password: password,
-    };
-
-    return this.http.post('http://localhost:3000/v1/users/sign_in', { user });
+  loginUser(username, password) {
+    return this.http.get(
+      `http://localhost:3000/users/?username=${username}&password=${password}`
+    );
   }
   addTranslation(translation: any): Observable<any> {
     return this.http.post('http://localhost:3000/translations', translation);

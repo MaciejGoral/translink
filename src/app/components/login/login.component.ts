@@ -29,9 +29,9 @@ export class LoginComponent implements OnInit {
     const username = this.loginForm.value.username;
     const password = this.loginForm.value.password;
 
-    this.ts.loginUser(username, password).subscribe((user: any) => {
-      if (user) {
-        localStorage.setItem('user', JSON.stringify(user.user));
+    this.ts.loginUser(username, password).subscribe((users: any) => {
+      if (users.length > 0) {
+        localStorage.setItem('user', JSON.stringify(users[0]));
         this.router.navigate(['/']);
       } else {
         this.loginError = 'Invalid username or password';

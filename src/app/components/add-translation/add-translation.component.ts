@@ -172,11 +172,6 @@ export class AddTranslationComponent {
       'translation-sentences': translationSentences,
       'words-translation': wordsTranslation,
     };
-
-    // Logging the data object
     return data;
-
-    // You can now do whatever you want with the 'data' object, such as sending it to the server.
-    // For now, we are just logging it.
   }
 }

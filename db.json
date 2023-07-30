@@ -1,62 +1,29 @@
 {
-  "texts": [
-    {
-      "id": 1,
-      "title": "Text 1",
-      "author": "John Doe",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.",
-      "created_at": "2013-01-01 00:00:00",
-      "image": "https://res.cloudinary.com/demo/image/upload/v1312461204/sample.jpg"
-    },
-    {
-      "id": 2,
-      "title": "Text 2",
-      "author": "John Doe",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.",
-      "created_at": "2013-01-01 00:00:00",
-      "image": "https://res.cloudinary.com/demo/image/upload/v1312461204/sample.jpg"
-    },
-    {
-      "id": 3,
-      "title": "Text 3",
-      "author": "John Doe",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.",
-      "created_at": "2013-01-01 00:00:00",
-      "image": "https://res.cloudinary.com/demo/image/upload/v1312461204/sample.jpg"
-    },
-    {
-      "id": 4,
-      "title": "Text 4",
-      "author": "John Doe",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pell",
-      "created_at": "2013-01-01 00:00:00",
-      "image": "https://res.cloudinary.com/demo/image/upload/v1312461204/sample.jpg"
-    }
-  ],
   "users": [
     {
       "id": 1,
-      "username": "john_doe",
       "email": "john.doe@example.com",
       "password": "password123"
     },
     {
       "id": 2,
-      "username": "jane_doe",
       "email": "jane.doe@example.com",
       "password": "secret"
     },
     {
-      "username": "admin",
       "email": "maciej636107@gmail.com",
       "password": "admin",
       "id": 3
     },
     {
-      "username": "qwe",
       "email": "qwe@gqwe.com",
       "password": "qwe",
       "id": 4
+    },
+    {
+      "email": "l@l.com",
+      "password": "123",
+      "id": 5
     }
   ],
   "word_lists": [
@@ -154,84 +121,175 @@
   "translations": [
     {
       "id": 1,
-      "creation-date": "22-12-2022 12:12:11",
+      "creation-date": "30.07.2023, 10:16:36",
       "owner": "user1",
       "image": "https://res.cloudinary.com/demo/image/upload/v1312461204/sample.jpg",
       "base-language": "English",
       "translation-language": "Polish",
-      "base-title": "title here",
-      "translation-title": "tytuł tutaj",
+      "base-title": "Fresh cookies",
+      "translation-title": "Świeże ciastka",
       "base-sentences": [
-        "What do you want?",
-        "Are you crazy? - asked the Doctor",
-        "I am not crazy, you are just very explicite example of an ignorant"
+        "The sun is shining brightly",
+        "I love to take long walks in the park",
+        "The smell of fresh cookies fills the air"
       ],
       "translation-sentences": [
-        "Czego ty chcesz?",
-        "Czy pan jest szalony? - spytał Doktor",
-        "Nie jestem szalony, to po prostu pan jest jaskrawym przypadkiem ignoranta"
+        "Słońce świeci jasno",
+        "Uwielbiam długie spacery w parku",
+        "Zapach świeżych ciastek unosi się w powietrzu"
       ],
       "words-translation": [
         {
-          "base": "what",
-          "translation": "czego",
+          "base": "sun",
+          "translation": "słońce",
           "sentence-index": 0,
           "id": 1
         },
         {
-          "base": "asked",
-          "translation": "spytał",
+          "base": "shining",
+          "translation": "świeci",
+          "sentence-index": 0,
+          "id": 2
+        },
+        {
+          "base": "brightly",
+          "translation": "jasno",
+          "sentence-index": 0,
+          "id": 3
+        },
+        {
+          "base": "I",
+          "translation": "Ja",
+          "sentence-index": 1,
+          "id": 1
+        },
+        {
+          "base": "love",
+          "translation": "uwielbiam",
           "sentence-index": 1,
           "id": 2
+        },
+        {
+          "base": "to",
+          "translation": "do",
+          "sentence-index": 1,
+          "id": 3
+        },
+        {
+          "base": "take",
+          "translation": "spacery",
+          "sentence-index": 1,
+          "id": 4
+        },
+        {
+          "base": "long",
+          "translation": "długie",
+          "sentence-index": 1,
+          "id": 5
+        },
+        {
+          "base": "walks",
+          "translation": "spacery",
+          "sentence-index": 1,
+          "id": 6
+        },
+        {
+          "base": "in",
+          "translation": "w",
+          "sentence-index": 1,
+          "id": 7
+        },
+        {
+          "base": "park",
+          "translation": "parku",
+          "sentence-index": 1,
+          "id": 9
+        },
+        {
+          "base": "smell",
+          "translation": "Zapach",
+          "sentence-index": 2,
+          "id": 2
+        },
+        {
+          "base": "fresh",
+          "translation": "świeżych",
+          "sentence-index": 2,
+          "id": 3
+        },
+        {
+          "base": "cookies",
+          "translation": "ciastek",
+          "sentence-index": 2,
+          "id": 5
+        },
+        {
+          "base": "fills",
+          "translation": "unosi",
+          "sentence-index": 2,
+          "id": 6
+        },
+        {
+          "base": "air",
+          "translation": "w powietrzu",
+          "sentence-index": 2,
+          "id": 8
         }
       ]
     },
     {
-      "creation-date": "30.07.2023, 10:16:36",
-      "owner": "s@g.com",
+      "creation-date": "30.07.2023, 18:02:40",
+      "owner": "l@l.com",
       "image": "https://res.cloudinary.com/demo/image/upload/v1312461204/sample.jpg",
-      "base-language": "1",
-      "base-title": "t1",
-      "translation-title": "t2",
+      "base-language": "English",
+      "translation-language": "1",
+      "base-title": "The stars",
+      "translation-title": "Gwiazdy",
       "base-sentences": [
-        "In this way the Dragon was able to feed upon both men and beasts without the least trouble to itself, as it needed not to move from the spot where it was lying",
-        "All the neighbouring kings had offered rich rewards to anyone who should be able to destroy the monster, either by force or enchantment, and many had tried their luck, but all had miserably failed"
+        "The river flows calmly.",
+        "She sings beautifully.",
+        "The stars twinkle in the night sky."
       ],
       "translation-sentences": [
-        "sdasd",
-        "sadasd"
+        "Rzeka płynie spokojnie.",
+        "Ona śpiewa pięknie.",
+        "Gwiazdy migoczą na nocnym niebie."
       ],
       "words-translation": [
         {
-          "base": "where",
-          "translation": "asd",
+          "base": "flows",
+          "translation": "płynie",
           "sentence-index": 1,
-          "id": 30
+          "id": 3
         },
         {
-          "base": "miserably",
-          "translation": "sadsdaa",
+          "base": "she",
+          "translation": "ona",
           "sentence-index": 2,
-          "id": 33
+          "id": 1
+        },
+        {
+          "base": "stars",
+          "translation": "gwiazdy",
+          "sentence-index": 3,
+          "id": 2
         }
       ],
       "id": 2
     },
     {
-      "creation-date": "30.07.2023, 10:19:28",
-      "owner": "s@g.com",
+      "creation-date": "30.07.2023, 18:05:42",
+      "owner": "l@l.com",
       "image": "https://res.cloudinary.com/demo/image/upload/v1312461204/sample.jpg",
-      "base-language": "1",
-      "translation-language": "2",
-      "base-title": "t43",
-      "translation-title": "34t",
+      "base-language": "English",
+      "translation-language": "1",
+      "base-title": "test",
+      "translation-title": "test",
       "base-sentences": [
-        "'translation-language': this",
-        "translationLanguage,"
+        "The stars"
       ],
       "translation-sentences": [
-        "123",
-        "1232"
+        "Gwiazdy"
       ],
       "words-translation": [],
       "id": 3
