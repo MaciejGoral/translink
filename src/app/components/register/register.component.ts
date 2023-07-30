@@ -6,28 +6,30 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
-  styleUrls: ['./register.component.scss']
+  styleUrls: ['./register.component.scss'],
 })
 export class RegisterComponent {
   registerForm: FormGroup;
   registerError: string;
 
-  constructor(private fb: FormBuilder, private ts: TextsService, private router: Router) { }
+  constructor(
+    private fb: FormBuilder,
+    private ts: TextsService,
+    private router: Router
+  ) {}
 
   ngOnInit() {
     this.registerForm = this.fb.group({
-      username: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      password: ['', Validators.required]
+      password: ['', Validators.required],
     });
   }
 
   onSubmit() {
     if (this.registerForm.valid) {
       const user = {
-        username: this.registerForm.value.username,
         email: this.registerForm.value.email,
-        password: this.registerForm.value.password
+        password: this.registerForm.value.password,
       };
 
       this.ts.registerUser(user).subscribe(() => {

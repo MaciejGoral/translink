@@ -6,18 +6,22 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
   loginForm: FormGroup;
   loginError: string;
 
-  constructor(private fb: FormBuilder,private ts: TextsService,private router: Router) { }
+  constructor(
+    private fb: FormBuilder,
+    private ts: TextsService,
+    private router: Router
+  ) {}
 
   ngOnInit() {
     this.loginForm = this.fb.group({
       username: ['', Validators.required],
-      password: ['', Validators.required]
+      password: ['', Validators.required],
     });
   }
 
@@ -25,9 +29,9 @@ export class LoginComponent implements OnInit {
     const username = this.loginForm.value.username;
     const password = this.loginForm.value.password;
 
-    this.ts.loginUser(username, password).subscribe((users: any) => {
-      if (users.length > 0) {
-        localStorage.setItem('user', JSON.stringify(users[0]));
+    this.ts.loginUser(username, password).subscribe((user: any) => {
+      if (user) {
+        localStorage.setItem('user', JSON.stringify(user.user));
         this.router.navigate(['/']);
       } else {
         this.loginError = 'Invalid username or password';

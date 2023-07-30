@@ -1,1 +1,27 @@
-<p>user-profile works!</p>
+<!-- src/app/user-profile/user-profile.component.html -->
+
+<div class="container">
+  <h2 class="my-4">User Profile</h2>
+
+  <div class="row">
+    <div class="col-md-6" *ngFor="let wordList of wordslist">
+      <div class="card mb-4">
+        <div class="card-body">
+          <h3 class="card-title d-inline">{{ wordList.name }}</h3>
+          <button
+            type="button"
+            class="btn btn-danger btn-sm float-end"
+            (click)="deleteWordList(wordList.id)"
+          >
+            Delete
+          </button>
+          <ul class="list-group">
+            <li class="list-group-item" *ngFor="let word of wordList.words">
+              {{ word.base }} - {{ word.translation }}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

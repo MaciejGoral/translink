@@ -4,7 +4,7 @@ import { Router, NavigationEnd } from '@angular/router';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
   isLoggedIn: boolean;
@@ -14,11 +14,12 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
     this.isLoggedIn = localStorage.getItem('user') != null;
-    this.router.events.subscribe(event => {
+    this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         this.isLoggedIn = localStorage.getItem('user') != null;
         if (this.isLoggedIn) {
-          this.username = JSON.parse(localStorage.getItem('user')).username;
+          console.log(JSON.parse(localStorage.getItem('user')));
+          this.username = JSON.parse(localStorage.getItem('user')).email;
         }
       }
     });

@@ -15,7 +15,10 @@
     <ul class="navbar-nav">
       <ng-container *ngIf="isLoggedIn; else loggedOutLinks">
         <li class="nav-item">
-          <a class="nav-link" href="/user-profile">Hello, {{username}}</a>
+          <a class="nav-link" href="/user-profile">Hello, {{ username }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/add-translation">Add translation</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#" (click)="logout()">Logout</a>

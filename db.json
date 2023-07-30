@@ -115,6 +115,126 @@
           "translated_word": "estrellas"
         }
       ]
+    },
+    {
+      "user_id": 3,
+      "name": "Test2",
+      "words": [
+        {
+          "base": "what",
+          "translation": "czego"
+        },
+        {
+          "base": "asked",
+          "translation": "spytał"
+        },
+        {
+          "base": "what",
+          "translation": "czego"
+        }
+      ],
+      "id": 5
+    },
+    {
+      "user_id": 3,
+      "name": "test3",
+      "words": [
+        {
+          "base": "what",
+          "translation": "czego"
+        },
+        {
+          "base": "asked",
+          "translation": "spytał"
+        }
+      ],
+      "id": 6
+    }
+  ],
+  "translations": [
+    {
+      "id": 1,
+      "creation-date": "22-12-2022 12:12:11",
+      "owner": "user1",
+      "image": "https://res.cloudinary.com/demo/image/upload/v1312461204/sample.jpg",
+      "base-language": "English",
+      "translation-language": "Polish",
+      "base-title": "title here",
+      "translation-title": "tytuł tutaj",
+      "base-sentences": [
+        "What do you want?",
+        "Are you crazy? - asked the Doctor",
+        "I am not crazy, you are just very explicite example of an ignorant"
+      ],
+      "translation-sentences": [
+        "Czego ty chcesz?",
+        "Czy pan jest szalony? - spytał Doktor",
+        "Nie jestem szalony, to po prostu pan jest jaskrawym przypadkiem ignoranta"
+      ],
+      "words-translation": [
+        {
+          "base": "what",
+          "translation": "czego",
+          "sentence-index": 0,
+          "id": 1
+        },
+        {
+          "base": "asked",
+          "translation": "spytał",
+          "sentence-index": 1,
+          "id": 2
+        }
+      ]
+    },
+    {
+      "creation-date": "30.07.2023, 10:16:36",
+      "owner": "s@g.com",
+      "image": "https://res.cloudinary.com/demo/image/upload/v1312461204/sample.jpg",
+      "base-language": "1",
+      "base-title": "t1",
+      "translation-title": "t2",
+      "base-sentences": [
+        "In this way the Dragon was able to feed upon both men and beasts without the least trouble to itself, as it needed not to move from the spot where it was lying",
+        "All the neighbouring kings had offered rich rewards to anyone who should be able to destroy the monster, either by force or enchantment, and many had tried their luck, but all had miserably failed"
+      ],
+      "translation-sentences": [
+        "sdasd",
+        "sadasd"
+      ],
+      "words-translation": [
+        {
+          "base": "where",
+          "translation": "asd",
+          "sentence-index": 1,
+          "id": 30
+        },
+        {
+          "base": "miserably",
+          "translation": "sadsdaa",
+          "sentence-index": 2,
+          "id": 33
+        }
+      ],
+      "id": 2
+    },
+    {
+      "creation-date": "30.07.2023, 10:19:28",
+      "owner": "s@g.com",
+      "image": "https://res.cloudinary.com/demo/image/upload/v1312461204/sample.jpg",
+      "base-language": "1",
+      "translation-language": "2",
+      "base-title": "t43",
+      "translation-title": "34t",
+      "base-sentences": [
+        "'translation-language': this",
+        "translationLanguage,"
+      ],
+      "translation-sentences": [
+        "123",
+        "1232"
+      ],
+      "words-translation": [],
+      "id": 3
     }
   ]
 }
