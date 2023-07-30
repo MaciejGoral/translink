@@ -246,14 +246,14 @@
       "base-title": "The stars",
       "translation-title": "Gwiazdy",
       "base-sentences": [
-        "The river flows calmly.",
-        "She sings beautifully.",
-        "The stars twinkle in the night sky."
+        "The river flows calmly",
+        "She sings beautifully",
+        "The stars twinkle in the night sky"
       ],
       "translation-sentences": [
-        "Rzeka płynie spokojnie.",
-        "Ona śpiewa pięknie.",
-        "Gwiazdy migoczą na nocnym niebie."
+        "Rzeka płynie spokojnie",
+        "Ona śpiewa pięknie",
+        "Gwiazdy migoczą na nocnym niebie"
       ],
       "words-translation": [
         {
@@ -285,12 +285,8 @@
       "translation-language": "1",
       "base-title": "test",
       "translation-title": "test",
-      "base-sentences": [
-        "The stars"
-      ],
-      "translation-sentences": [
-        "Gwiazdy"
-      ],
+      "base-sentences": ["The stars"],
+      "translation-sentences": ["Gwiazdy"],
       "words-translation": [],
       "id": 3
     }
